@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  border-style: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*navbar*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.navbar{
+  position: static;
+  z-index: 100;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 5vh;
+  display: flex;
+  padding: 1rem 3rem;
+  background: transparent;
+}
+.logo{
+  margin-top: 25px;
+  margin-left: 10px;
+  height: 45px;
+  font-size: 3rem;
+  color: red;
+  text-transform: uppercase;
+}
+.navbar li{
+  display: inline;
+  list-style: none;
+  padding-left: 13px;  
+}
+.navbar button{
+  margin-top: 13px;
+  width: 80px;
+  height: 35px;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+
+}
+
+.language-btn{
   color: white;
+  background:transparent;
+  border-color: white;
+  border-width: thin;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 0.9rem;  
+
+}
+.login-btn{
+  color:white;
+  background-color: rgb(235, 21, 21);
+  border-style: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/*headline*/
+
+
+.headline{
+  z-index: -100;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 75vh;
+  color: white;
+  text-align: center;
+  background-image: url("./imgs/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headline-text{
+  position: relative;
+  display: block;
+  top: 34%;
+  left: 0;
+  background: transparent;
+  padding-bottom: 15px;
+}
+.headline h1{
+  font-size: 4rem;
+}
+.headline h2{
+  font-size: 1.6rem;
+}
+
+.headline-input{
+  width: 700px;
+  height: 60px;
+  position: absolute;
+  left: 32%;
+  top: 540px;
+  display: block;
+}
+.headline-input input{
+  padding-left: 5px;
+  height: 60px;
+  width: 520px;
+}
+.headline-input button{
+  transform: translateY(8%);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: red;
+  font-size: 30px;
+  border-style: none;
+  height: 63px;
+  width: 150px;
+}
+.headline-input button:hover{
+  background-color: rgb(250, 29, 29);
+}
+
+
+.break{
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: rgb(39, 36, 36);
+  left: 0;
+
+}
+.headline .break{
+  width: 100%;
+  top: 74vh;
+}
+.section .break{
+  width: 100%;
+  top: 49vh;
+}
+.section-mirror .break{
+  width: 100%;
+  top: 49vh;
+}
+
+/*section*/
+
+.section{
+  justify-content: center;
+  display: block;
+  position: relative;
+  top: 66.5vh;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 50vh;
+
+}
+.section-h1{
+  padding-top: 80px;
+  padding-left: 400px;
+  font-size: 3rem;
+  width: 30%;
+  height: 13vh;
+
+}
+.section-h2{
+  font-size: 1.3nprem;
+  padding-left: 400px;
+  width: 30%;
+
+}
+.section-img{
+  position: absolute;
+  top: 20px;
+  right: 350px;
+  width: 510px;
+  height: auto;
+
+}
+
+/*section mirror*/
+
+.section-mirror{
+  justify-content: center;
+  display: block;
+  position: relative;
+  top: 66.5vh;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 50vh;
+
+}
+.section-mirror-h1{
+  padding-right: 350px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 3rem;
+  width: 30%;
+  height: 13vh;
+  float: right;
+}
+.section-mirror-h2{
+  padding-right: 350px;
+  float: right;
+  clear: right;
+  top: 300px;
+  width: 30%;
+
+}
+.section-mirror-img{
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 510px;
+  height: auto;
+
 }
